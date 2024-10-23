@@ -10,7 +10,12 @@ def encode(password):
 
 
 def decode(encoded_password):
-    pass
+#Antonio Taveras, Lab 6 - Group 50
+    decoded = ""
+    for num in str(encoded_password):
+        new_num = int(num) - 3
+        decoded += str(new_num)
+    return decoded
 
 def menu():
     print('\nMenu\n-------------\n1. Encode\n2. Decode\n3. Quit')
